@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: jvm-build-suite-component-gzkqrf
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/jvm-build-unlq-tenant/jvm-build-suite-application-fhwf/jvm-build-suite-component-gzkqrf@sha256:50c1ed65075f2d7f3ef674ee73a708a7a6a7fa9b34445af866f45c2378c31a86
+        name: hacbs-jvm-build-test-project
+        resources: {}
+status: {}
